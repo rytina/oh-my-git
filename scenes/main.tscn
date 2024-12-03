@@ -276,6 +276,17 @@ text = "Next level"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ToggleCardsButton" type="Button" parent="Menu"]
+margin_left = 500.0
+margin_right = 600.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+text = "Toggle Cards"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="saved" from="Rows/Columns/RightSide/FileBrowser" to="." method="update_repos"]
 [connection signal="command_done" from="Rows/Controls/Terminal" to="." method="update_repos"]
 [connection signal="pressed" from="Menu/BackButton" to="." method="back"]
@@ -283,3 +294,4 @@ __meta__ = {
 [connection signal="pressed" from="Menu/CardsButton" to="." method="toggle_cards"]
 [connection signal="pressed" from="Menu/Tip!" to="." method="new_tip"]
 [connection signal="pressed" from="Menu/NextLevelButton" to="." method="load_next_level"]
+[connection signal="pressed" from="Menu/ToggleCardsButton" to="." method="toggle_cards_visibility"]

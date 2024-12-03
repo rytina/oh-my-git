@@ -226,3 +226,6 @@ func new_tip():
 
 func back():
 	get_tree().change_scene("res://scenes/level_select.tscn")
+
+func toggle_cards_visibility():
+	cards.visible = not cards.visible

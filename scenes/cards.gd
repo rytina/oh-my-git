@@ -8,6 +8,7 @@ func _ready():
 	load_card_store()
 	#redraw_all_cards()
 	arrange_cards()
+	set_visibility(false)
 	pass
 
 func _process(_delta):
@@ -101,3 +102,6 @@ func redraw_all_cards():
 
 func add_card(command):
 	draw_card({"command": command, "description": "", "arg_number": 0, "energy": 0})
+
+func set_visibility(visible):
+	self.visible = visible
